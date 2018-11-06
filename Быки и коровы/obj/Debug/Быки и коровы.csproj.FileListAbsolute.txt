@@ -1,0 +1,7 @@
+C:\Users\spaik\source\repos\Быки и коровы\Быки и коровы\obj\Debug\Быки и коровы.csprojAssemblyReference.cache
+C:\Users\spaik\source\repos\Быки и коровы\Быки и коровы\obj\Debug\Быки и коровы.csproj.CoreCompileInputs.cache
+C:\Users\spaik\source\repos\Быки и коровы\Быки и коровы\bin\Debug\Быки и коровы.exe.config
+C:\Users\spaik\source\repos\Быки и коровы\Быки и коровы\bin\Debug\Быки и коровы.exe
+C:\Users\spaik\source\repos\Быки и коровы\Быки и коровы\bin\Debug\Быки и коровы.pdb
+C:\Users\spaik\source\repos\Быки и коровы\Быки и коровы\obj\Debug\Быки и коровы.exe
+C:\Users\spaik\source\repos\Быки и коровы\Быки и коровы\obj\Debug\Быки и коровы.pdb
