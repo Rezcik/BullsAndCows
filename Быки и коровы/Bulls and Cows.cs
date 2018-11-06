@@ -9,7 +9,7 @@ namespace Быки_и_коровы
    public class Bulls_and_Cows
     {
         int bulls, cows;
-        char[] answer;
+        char[] enigma;//загаданное число
         Random rand = new Random();
         
         static void Swap<T>(ref T a, ref T b)
@@ -19,7 +19,7 @@ namespace Быки_и_коровы
 
         public Bulls_and_Cows()
         {
-            answer = Enumerable.Range(0, 10).Select(x => (char)('0' + x)).ToArray();
+            enigma = Enumerable.Range(0, 10).Select(x => (char)('0' + x)).ToArray();
         }
 
         internal string Step(string query)
@@ -30,10 +30,10 @@ namespace Быки_и_коровы
             {
                 bulls = 0; cows = 0;
                 for (int i = 0; i < 4; i++)
-                    if (answer[i] == query[i])
+                    if (enigma[i] == query[i])
                         bulls++;
                     else
-                    if (answer.Take(4).Contains(query[i]))
+                    if (enigma.Take(4).Contains(query[i]))
                         cows++;
                 return $"Быки - {bulls}, Kоровы - {cows}";
             }
@@ -43,15 +43,15 @@ namespace Быки_и_коровы
             }
         }
 
-        internal bool IsGameOver() => bulls == 4;// bulls = 4 значит игра закончилась 
+        internal bool IsGameOver() => bulls == 4;//если bulls = 4 значит игра закончилась 
         
         public void NewGame()
         {
-                for (int i = 0; i < 4; i++)
+            for (int i = 0; i < 4; i++)
                 {
-                    Swap(ref answer[i], ref answer[rand.Next(i, 10)]);
+                    Swap(ref enigma[i], ref enigma[rand.Next(i, 10)]);
                 }
-
+            Console.WriteLine(enigma);
         }      
     }
 }
